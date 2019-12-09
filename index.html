@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome to First Online Pizza Ordering System</title>
+<link rel="shortcut icon" href="favicon.png" />
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<body>
+<script type="text/javascript">
+	if(getCookie('order1')==null || getCookie('order1')==""){
+		document.writeln('<div class="chart" id="chart" style=" margin-right:-150px;">');
+	}
+	else
+	{
+		document.writeln('<div class="chart">');
+	}
+</script>
+
+    <img src="images/Comprar.png" />
+    <div id="chartItems" style="width:100%; min-height:150px; background-image:url(images/v5_textures_03.jpg)" onmouseover="animate1();" onmouseout="animate2();" >
+    	<script type="text/javascript">getChartItems();</script>
+    </div>
+</div>
+<div class="main">
+  <div class="header">
+    <div class="top">
+    <table width="100%">
+    <tr>
+    <td>
+     <label id="time"></label>
+     </td>
+     <td>
+     <div id="scroll">
+      <marquee direction="left" height="25" width="550" behavior="scroll" scrolldelay="100">We accept 24/7 Online Orders.You can also make an order by calling us on (+355) 69 666 25 25 from everywhere in Albania.</marquee>
+     </div>
+     </td>
+     <td>
+        <div id="lang">
+         <a href="#"><img src="images/al.png" width="25" height="15" /></a>
+         <a href="#"><img src="images/en.png" width="25" height="15" /></a>
+     </div>
+     </td>
+     </tr>
+     </table>
+    </div>
+  	<div class="banner"></div>
+  	<div class="logo"></div>
+    <div class="menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="body">
+  <div class="main_area">
+        <div class="sliderArea">
+      		<div class="slider" style="z-index:1;">
+                  <img src="images/slider/slide1.jpg" id="slider" style="z-index:1;" width="650" height="300" />
+                  
+                <div class="prev">
+                    <img src="images/arrow_left.png" width="25" height="50" alt="prev" id="previousItem" />
+                  </div>
+                  <div class="next">
+                    <img src="images/arrow_right.png" width="25" height="50" alt="next" id="nextItem" />
+                  </div>
+                 
+                    <div class="sliderText" id="sliderText">
+                        <span id="title"></span><br />
+                        <span id="text"></span>
+                    </div>
+                </div>
+                <div class="content" id="content">
+                    <div class="item">
+                        <img src="images/slider/slide1.jpg" />
+                            <h2>Fast Delivering</h2>
+                            <p>Anything that you order with us will come faster than you might ever thought</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider/slide2.jpg" />
+                            <h2>Pizzas are for everyone</h2>
+                            <p>Even famous people have pizza at their menu.<br />So don't hesitate to order pizza with us</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider/slide3.jpg" />
+                            <h2>Pay how you want</h2>
+                            <p>You can pay for you pizzas with paypal, credit card or by cash.You choose it the one that best fits you.</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider/slide4.jpg" />
+                            <h2>Important is to taste</h2>
+                            <p>We don't want just to sell our pizzas. For us important is how the customer feels.For us your opinion is valuable</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/slider/slide5.jpg" />
+                            <h2>Well-done Pizzas</h2>
+                            <p>Our Pizzas are baked with Woody oven wich gives them a taste that you have never tried before</p>
+                    </div>
+                </div>
+        </div>
+      <div class="items">
+       <h1> Our Special Offers </h1>
+      <table border="0">
+      <tr>
+       <td>
+       <div class="offer">
+       		 <div>
+               <label style="float:left; margin-top:40px;">1 Pizza </label>
+               <img src="images/pica.png" width="140" height="98" /><br />
+               <label style="float:left; margin-top:30px;">+ 1 cola</label><br /><br />
+               <img src="images/can.png" width="40" height="74" />
+               <label style="float:right; margin-top:60px; margin-right:20px;">Just 5 $ </label><br />
+              <img src="images/order.png" onclick="addToChart('1 pizza + 1 cola',1,5.0);" />
+             </div>
+        </div>
+       </td>
+      <td>
+       	<div class="offer">
+           <div>
+               <label style="float:left; margin-top:40px;">2 Pizza </label>
+               <img src="images/2pizza.png" width="140" height="98" /><br />
+               <label style="float:left; margin-top:30px;">+ 1 cola</label> 
+               <img src="images/cola.png" width="39" height="120" />
+               <label style="float:right; margin-top:70px; margin-right:20px;">Just 10 $ </label><br />
+              <img src="images/order.png" onclick="addToChart('2 pizza + 1 cola',1,10.0);" />
+           </div>
+        </div>
+       </td>
+       <td>
+       <div class="offer">
+      		 <div>
+               <label style="float:left; margin-top:40px;">4 Pizza </label>
+               <img src="images/4pica.png" width="140" height="98" /><br />
+               <label style="float:left; margin-top:30px;">+ 2 cola</label> 
+               <img src="images/cola2.png" width="60" height="120" />
+               <label style="float:right; margin-top:70px; margin-right:20px;">Just 20 $ </label><br />
+              <img src="images/order.png" onclick="addToChart('4 pizza + 2 cola',2,10.0);" />
+            </div>
+        </div>
+       </td>
+       </tr>
+      </table>
+    </div>
+    <div style="text-align:center; margin-bottom:10px;">
+    	<h2>Pizzerias near your location</h2>
+        <iframe id="googleMap" src="http://www.map-generator.net/extmap.php?name=Piceri Hallall&amp;address=Rinas ,Epoka University &amp;width=600&amp;height=300&amp;maptype=map&amp;zoom=14&amp;hl=en&amp;t=1331054431" width="600" height="300" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"> </iframe>
+    </div>
+ </div>
+    <div class="rightside">
+    
+    <div class="login" id="login">
+    <script type="text/javascript">
+	var username=getCookie("username");
+	  if (username!=null && username!="")
+	  {
+		  document.writeln('<div class="userInfo">');
+		  document.writeln('<img src="images/user.jpg" />');
+		  document.writeln('<p>'+username+' [<b><a href="#" onclick="deleteCookie('+"'username'"+');">Log Out</a></b>]</p>');
+		  document.writeln('</div>');
+	  }
+  else{
+	
+    document.writeln("<fieldset>"+
+    "<legend>Login</legend>" +
+    '<form action="index.html" method="post" id="loginForm" onsubmit="return checkLogin();">' +
+    '<table border="0">' +
+    "<tr>" +
+    "<td>" +
+    '<label>Username </label><input type="text" id="username" name="username" maxlength="50" size="25" /> ' +
+    "</td>" +
+    "</tr>" +
+   " <tr>" +
+    "<td>" +
+    '<label>Password </label><input type="password" name="password" size="25" maxlength="50" />' +
+    "</td>" +
+    "</tr>" +
+    "<tr>" +
+    '<td colspan="2" align="right"><input type="submit" value="Login" name="login" /></td>' +
+    "</tr>" +
+    '<tr><td colspan="2"><input type="checkbox" />Remember Me</td></tr>' +
+    "<tr>" +
+    '<td colspan="2">' +
+    '<a href="forgot.html"> Forgot Password</a> | <a href="register.html"> Register</a>' +
+    "</td>" +
+    "</tr>" +
+    "</table>" +
+    "</form>" +
+    "</fieldset>");
+  }
+    </script>
+    
+    </div>
+    <div class="poll">
+    <br />
+     <hr />
+    <form action="#" method="post" onsubmit="if(document.getElementById('bad').checked){alert('You can not choose this option');} else {alert('Thank you for voting');}">
+    <fieldset>
+    <legend>Let us know </legend>
+    What do you think about our Services<br />
+    <input type="radio" name="poll" />Exellent<br />
+    <input type="radio" name="poll" />Very Good<br />
+    <input type="radio" name="poll" />Good<br />
+    <input type="radio" name="poll" />Normal<br />
+    <input type="radio" name="poll" id="bad" value="bad" />Bad<br />
+    <input type="submit" value="Vote" />
+    <input type="button" value="View Results" onclick="window.location='poll_result.html'" />
+    </fieldset>
+    </form>
+    </div>
+    <hr />
+    <div class="facebook">
+    	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FPicerial%2F397132693660011&amp;width=300&amp;height=600&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;appId=304203026325085" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:600px;" allowTransparency="true">
+        </iframe>
+     </div>
+  </div>
+  </div>
+  <div class="footer">
+  	<div class="footer_menu"> <a href="sitemap.html">Sitemap</a> | FAQ | Locations | Customer Service | Privacy Policy | Terms of Use</div>
+    <div class="paylogo">
+    	<img src="images/pay_method.png" width="180" height="50" alt="pay_methods" />
+    </div>
+    <div class="copyright">Copyright &copy; PICERI.AL 2012 | All Rights Reserved</div>
+    <div class="follow">
+        <a href="http://www.facebook.com" title="Facebook" target="_blank">
+            <img src="images/social/facebook.png" width="24" height="24" alt="facebook" />
+        </a>
+                <a href="http://www.twitter.com" title="Twitter" target="_blank">
+            <img src="images/social/twitter.png" width="24" height="24" alt="twitter" />
+        </a>
+               <a href="https://plus.google.com/102750821162495129904" title="Google" target="_blank">
+            <img src="images/social/google.png" width="24" height="24" alt="google plus" />
+        </a>
+               <a href="http://www.facebook.com" title="Feed" target="_blank">
+            <img src="images/social/feed.png" width="24" height="24" alt="feed" />
+        </a>
+               <a href="http://www.youtube.com" title="Youtube" target="_blank">
+            <img src="images/social/youtube.png" width="24" height="24" alt="youtube" />
+        </a>
+               <a href="http://www.linkedin.com" title="Linkedin" target="_blank">
+            <img src="images/social/linkedin.png" width="24" height="24" alt="linkedin" />
+        </a>
+               <a href="http://www.flickr.com" title="Flickr" target="_blank">
+            <img src="images/social/flickr.png" width="24" height="24" alt="flickr" />
+        </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

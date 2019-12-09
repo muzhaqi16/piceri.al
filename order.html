@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Order a Pizza</title>
+<link rel="shortcut icon" href="favicon.png" />
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<!--
+taken from http://fredhq.com/projects/roundabout/
+
+-->
+<script type="text/javascript" src="js/jquery.roundabout.min.js"></script>
+<!--
+taken from http://sorgalla.com/projects/jcarousel/
+-->
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+<style type="text/css">
+.body{
+	margin-left:10px;
+	margin-top:50px;
+	}
+#captions img{
+	position:relative;
+	top:15px;
+	left:10px;
+	}
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+	if(getCookie('order1')==null || getCookie('order1')==""){
+		document.writeln('<div class="chart" id="chart" style=" margin-right:-150px;">');
+	}
+	else
+	{
+		document.writeln('<div class="chart">');
+	}
+</script>
+
+    <img src="images/Comprar.png" />
+    <div id="chartItems" style="width:100%; min-height:150px; background-image:url(images/v5_textures_03.jpg)" onmouseover="animate1();" onmouseout="animate2();" >
+    	<script type="text/javascript">getChartItems();</script>
+    </div>
+</div>
+<div class="main">
+  <div class="header">
+    <div class="top">
+    <table width="100%">
+    <tr>
+    <td>
+     <label id="time"></label>
+     </td>
+     <td>
+     <div id="scroll">
+      <marquee direction="left" height="25" width="550" behavior="scroll" scrolldelay="100">We accept 24/7 Online Orders.You can also make an order by calling us on (+355) 69 666 25 25 from everywhere in Albania.</marquee>
+     </div>
+     </td>
+     <td>
+        <div id="lang">
+         <a href="#"><img src="images/al.png" width="25" height="15" /></a>
+         <a href="#"><img src="images/en.png" width="25" height="15" /></a>
+     </div>
+     </td>
+     </tr>
+     </table>
+    </div>
+  	<div class="banner"></div>
+  	<div class="logo"></div>
+    <div class="menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="body">
+  		<!-- Carousel -->
+		<div class="my_carousel">
+			<!-- Carousel Containter -->
+			<div class="carousel_container">
+				<div id="carousel"></div>
+				<img class="nextItem" src="images/arrow_left.png"/>
+				<img class="prevItem" src="images/arrow_right.png"/>
+			</div>
+			
+			<!-- Caption Container -->
+            <br />
+			<div class="caption_container">
+				<div id="captions"></div>
+			</div>
+			
+			<!-- Carousel Data -->
+			<div class="carousel_data">
+				
+				<!-- begin items -->
+
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/carousel/1.png" alt="teapot_green" />
+					</div>
+					<div class="caption">
+						<h2>Wisconsin 6 Cheese</h2>
+                        <br />
+						<p>Robust tomato sauce, cheeses made with 100% real mozzarella, feta, provolone, cheddar, parmesan, asiago and sprinkled with oregano on a parmesan and asiago crust.</p>
+                        <br />
+                        <p class="price">Price 6.50 $</p>
+                        <label> Amount </label> <input type="text" name="amount" id="1" size="3" maxlength="3" />
+                        <img src="images/order.png" width="138" height="43" alt="order" onclick="addToChart(document.getElementById('1').value + ' Wisconsin 6 Cheese',document.getElementById('1').value,6.50);" />
+					</div>
+				</div>
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/carousel/2.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Honolulu Hawaiian Pizza</h2>
+						<p>Sliced ham, bacon, pineapple and roasted red peppers with provolone cheese on a parmesan asiago crust.</p>
+                        <br />
+                        <p class="price">Price 5.99 $</p>
+                        <label> Amount </label> <input type="text" name="amount" id="1" size="3" maxlength="3" />
+                        <img src="images/order.png" width="138" height="43" alt="order" onclick="addToChart(document.getElementById('1').value + ' Honolulu Hawaiian Pizza',document.getElementById('1').value,5.99);" />
+					</div>
+				</div>			
+				
+                <!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/carousel/3.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Philly Cheese Steak Pizza</h2>
+                        <br />
+						<p>Tender slices of steak, onions, green peppers and mushrooms with provolone and American cheeses on a provolone crust.</p>					
+                        <br />
+                        <p class="price">Price 7.25 $</p>
+                        <label> Amount </label> <input type="text" name="amount" id="1" size="3" maxlength="3" />
+                        <img src="images/order.png" width="138" height="43" alt="order" onclick="addToChart(document.getElementById('1').value + ' Philly Cheese Steak Pizza',document.getElementById('1').value,7.25);" />
+					</div>
+				</div>	
+                
+                <!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/carousel/4.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Pacific Veggie Pizza</h2>
+                        <br />
+						<p>Roasted red peppers, spinach, onions, mushrooms, tomatoes and black olives with feta and provolone cheeses on a parmesan asiago crust.</p>
+                        <br />
+                        <p class="price">Price 5.50 $</p>
+                        <label> Amount </label> <input type="text" name="amount" id="1" size="3" maxlength="3" />
+                        <img src="images/order.png" width="138" height="43" alt="order" onclick="addToChart(document.getElementById('1').value + ' Pacific Veggie Pizza',document.getElementById('1').value,5.50);" />
+					</div>
+				</div>	
+                
+                <!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/carousel/5.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Cali Chicken Bacon Ranch Pizza</h2>
+                        <br />
+						<p>Grilled chicken breast, white sauce, smoked bacon and tomatoes on a provolone crust.</p>
+                         <br />
+                        <p class="price">Price 7.20 $</p>
+                        <label> Amount </label> <input type="text" name="amount" id="1" size="3" maxlength="3" />
+                        <img src="images/order.png" width="138" height="43" alt="order" onclick="addToChart(document.getElementById('1').value + ' Cali Chicken Bacon Ranch Pizza',document.getElementById('1').value,7.20);" />
+					</div>
+				</div>	
+                
+                <!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/carousel/6.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Fiery Hawaiian Pizza</h2>
+                        <br />
+						<p>Sliced ham, bacon, pineapple, roasted red peppers, hot sauce, and jalapeños with provolone cheese on a parmesan asiago crust.</p>
+                        <br />
+                        <p class="price">Price 4.75 $</p>
+                        <label> Amount </label> <input type="text" name="amount" id="1" size="3" maxlength="3" />
+                        <img src="images/order.png" width="138" height="43" alt="order" onclick="addToChart(document.getElementById('1').value + ' Fiery Hawaiian Pizza',document.getElementById('1').value,4.75);" />
+					</div>
+				</div>	
+                
+                <!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/carousel/7.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Buffalo Chicken Pizza</h2>
+                        <br />
+						<p>Grilled chicken breast, buffalo hot sauce and onions with provolone and American cheeses on a cheddar crust.</p>
+                        <br />
+                        <p class="price">Price 8.25 $</p>
+                       <label> Amount </label> <input type="text" name="amount" id="1" size="3" maxlength="3" />
+                        <img src="images/order.png" width="138" height="43" alt="order" onclick="addToChart(document.getElementById('1').value + ' Buffalo Chicken Pizza',document.getElementById('1').value,8.25);" />
+					</div>
+				</div>	
+                
+				<!-- end items -->
+			</div>			
+		</div>
+<br /><br />
+  </div>
+  <div class="footer">
+  	<div class="footer_menu"> <a href="sitemap.html">Sitemap</a> | FAQ | Locations | Customer Service | Privacy Policy | Terms of Use</div>
+    <div class="paylogo">
+    	<img src="images/pay_method.png" width="180" height="50" alt="pay_methods" />
+    </div>
+    <div class="copyright">Copyright &copy; PICERI.AL 2012 | All Rights Reserved</div>
+    <div class="follow">
+        <a href="http://www.facebook.com" title="Facebook" target="_blank">
+            <img src="images/social/facebook.png" width="24" height="24" alt="facebook" />
+        </a>
+                <a href="http://www.twitter.com" title="Twitter" target="_blank">
+            <img src="images/social/twitter.png" width="24" height="24" alt="twitter" />
+        </a>
+               <a href="https://plus.google.com/102750821162495129904" title="Google" target="_blank">
+            <img src="images/social/google.png" width="24" height="24" alt="google plus" />
+        </a>
+               <a href="http://www.facebook.com" title="Feed" target="_blank">
+            <img src="images/social/feed.png" width="24" height="24" alt="feed" />
+        </a>
+               <a href="http://www.youtube.com" title="Youtube" target="_blank">
+            <img src="images/social/youtube.png" width="24" height="24" alt="youtube" />
+        </a>
+               <a href="http://www.linkedin.com" title="Linkedin" target="_blank">
+            <img src="images/social/linkedin.png" width="24" height="24" alt="linkedin" />
+        </a>
+               <a href="http://www.flickr.com" title="Flickr" target="_blank">
+            <img src="images/social/flickr.png" width="24" height="24" alt="flickr" />
+        </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

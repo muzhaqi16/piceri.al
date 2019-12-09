@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image:url(../images/bg.jpg);
+	background-repeat:repeat;
+	}
+.body {
+	min-height:400px;
+}
+
+.rightside {
+	clear: right;
+	float: right;
+	width: 300px;
+	height:auto;
+	vertical-align: top;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/vertical.png);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+.sliderArea {
+	height: 300px;
+	z-index:2102;
+	width:100%;
+	margin-top:15px;
+	margin-left:5px;
+	margin-right:5px;
+	overflow:hidden;
+}
+.main_area {
+	height: auto;
+	width: 660px;
+	float:left;
+	clear:left;
+	background-image: none;
+}
+
+
+.menu {
+	text-align:center;
+	background-image: url(../images/menu_bg.jpg);
+	background-repeat: repeat-x;
+	clear: both;
+	height: 50px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.menu ul {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 50px;
+	text-align:center;
+	text-decoration: none;
+	list-style-type: none;
+}
+.main .header .menu ul li a {
+	font-size: 24px;
+	padding: 10px;
+	color: #FFF;
+	text-align:center;
+	vertical-align:middle;
+	text-decoration: none;
+}
+.logo {
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 150px;
+	clear: left;
+	float: left;
+	width: 314px;
+	margin-top: -160px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.banner {
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	clear: right;
+	float: right;
+	width: 754px;
+	height: 125px;
+}
+.menu li {
+	margin: 0px;
+	padding: 10px 0px;
+	text-align:center;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+	height:100%;
+	vertical-align:middle;
+	width: 19%;
+}
+.menu li:hover {
+	background-image: url(../images/menu_hover.png);
+	background-repeat: no-repeat;
+}
+.main{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFE09D;
+	overflow:hidden;
+	}
+.header {
+	margin: 0px;
+	padding: 0px;
+	
+	width: 100%;
+}
+.footer {
+	margin: 0px;
+	height: 100px;
+	width: 100%;
+	background-color: #333;
+	color: #FFF;
+	clear: both;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.paylogo {
+	float: right;
+	clear: right;
+	text-align: right;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-right: 40px;
+}
+.follow a{
+	text-decoration:none;
+	}
+.follow {
+	float: right;
+	clear: right;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	text-align: left;
+}
+.items {
+	background-image: url(../images/horizontal.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	text-align: center;
+	color:#00F;
+	height:350px;
+}
+.footer_menu {
+	clear: left;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-left: 20px;
+	line-height: 25px;
+}
+.footer_menu a{
+	text-decoration:none;
+	color:#FFF;
+	}
+.copyright {
+	clear: left;
+	float: left;
+	text-align: left;
+	vertical-align: bottom;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.login {
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.poll {
+	clear: both;
+}
+.offer {
+	border:thin inset;
+	width:200px;
+	height:270px;
+	margin-left:10px;
+}
+.story {
+	line-height: 35px;
+	text-align:left;
+	font-size:18px;
+	text-indent: 100px;
+	word-spacing: 10px;
+	width: 700px;
+	margin-bottom:10px;
+}
+.top {
+	height: 25px;
+	width: 100%;
+	background-color: #333;
+}
+
+.userInfo {
+	margin-left: 10px;
+	vertical-align:top;
+}
+.userInfo img{
+	float:left;
+	margin-right:10px;
+	}
+#time{ 
+	float:left;
+	color:#FFF;
+	z-index:121119;
+	padding:0px;
+	width:250px;
+	margin:0px;
+	margin-top:0px;
+	margin-left:10px;
+	}
+#lang{
+	padding-bottom:0px;
+	margin-right:10px;
+	margin-left:20px;
+	margin-top:0px;
+	float:right;
+	}
+#scroll{
+	float:right;
+	margin-right:10px;
+	margin-left:30px;
+	color:#FFF;
+	}
+.chart {
+	float: right;
+	width: 200px;
+	position:fixed;
+	top:250px;
+	right:0px;
+	min-height:100px;
+}
+.recipeImg{
+	text-decoration:none;
+	border-style:ridge;
+	border-width:thick;
+	border-color:#FF0;
+	}
+.register_box{
+	margin-left:100px;
+	width:400px;
+	}

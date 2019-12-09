@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Register</title>
+<link rel="shortcut icon" href="favicon.png" />
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript">
+function checkRegisterBox(){
+	registerForm=document.getElementById("loginForm");
+	if(registerForm.password.value!=registerForm.password2.value){
+		alert('Password does not match');
+		return false;
+	}
+	alert('Thank you for registering');
+	checkLogin();
+	return true;
+	}
+</script>
+<style type="text/css">
+.body{
+	margin-left:10%;
+	margin-top:10px;
+	}
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+	if(getCookie('order1')==null || getCookie('order1')==""){
+		document.writeln('<div class="chart" id="chart" style=" margin-right:-150px;">');
+	}
+	else
+	{
+		document.writeln('<div class="chart">');
+	}
+</script>
+
+    <img src="images/Comprar.png" />
+    <div id="chartItems" style="width:100%; min-height:150px; background-image:url(images/v5_textures_03.jpg)" onmouseover="animate1();" onmouseout="animate2();" >
+    	<script type="text/javascript">getChartItems();</script>
+    </div>
+</div>
+<div class="main">
+  <div class="header">
+    <div class="top">
+     <table width="100%">
+    <tr>
+    <td>
+     <label id="time"></label>
+     </td>
+     <td>
+     <div id="scroll">
+      <marquee direction="left" height="25" width="550" behavior="scroll" scrolldelay="100">We accept 24/7 Online Orders.You can also make an order by calling us on (+355) 69 666 25 25 from everywhere in Albania.</marquee>
+     </div>
+     </td>
+     <td>
+        <div id="lang">
+         <a href="#"><img src="images/al.png" width="25" height="15" /></a>
+         <a href="#"><img src="images/en.png" width="25" height="15" /></a>
+     </div>
+     </td>
+     </tr>
+     </table>
+    </div>
+  	<div class="banner"></div>
+  	<div class="logo"></div>
+    <div class="menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="body">
+  <h2>Please fill out the following informations to register</h2>
+  		<div class="register_box">
+            <form action="index.html" id="loginForm" method="post" onsubmit="return checkRegisterBox();">
+            <fieldset>
+            <legend>Register</legend>
+            <table border="0">
+            <tr><td>First Name : </td><td><input type="text" name="name" title="Enter your name" maxlength="25" size="25" /></td></tr>
+            <tr><td>Last Name : </td><td><input type="text" name="surname" title="Enter your surname" maxlength="25" size="25"/></td></tr>
+            <tr><td>Username : </td> <td><input type="text" name="username" value="" maxlength="25" title="Enter your username" size="25" /></td></tr>
+            <tr><td>Email : </td><td><input type="text" name="email" maxlength="30" title="Enter your email address" size="25" /></td></tr>
+            <tr><td>Confirm Email : </td><td><input type="text" name="confirmemail" maxlength="30" title="Confirm your email address" size="25"/></td></tr>
+            <tr><td>Password : </td><td><input type="password" name="password" value="" maxlength="25" title="Enter your password" size="25" /></td></tr>
+            <tr><td>Confirm Password : </td><td><input type="password" name="password2" value="" maxlength="25" title="Confirm your password" size="25"  /></td></tr>
+            <tr><td>Address : </td><td><textarea cols="20" rows="4" name="address" ></textarea></td></tr>
+            <tr><td>City : </td><td><input type="text" name="city" size="25" /></td></tr>
+            <tr><td>Country : </td><td><select name="country">
+            <option value="Afghanistan" selected="selected">Afghanistan</option>
+            <script type="text/javascript">
+			 var countries= new Array("Albania","Algeria","Angola","Argentina","Australia",
+                    "Austria","Azerbaijan","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Bermuda","Bolivia",
+                    "Botzwana","Brazil","Brunei Darussalam","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada",
+                    "Chad","Chile","Colombia","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Dahomey","Denmark","Djibouti",
+                    "Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Faroe Islands",
+                    "Fiji","Finland","Macedonia","France","French Polynesia","Gabon","Gambia","Georgia",
+                    "Germany","Ghana","Gibraltar","Greece","Greenland","Guadeloupe","Guam","Guatemala","Guinea","Guyana(French)",
+                    "Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Islamic Republic of Pakistan",
+                    "Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakstan","Kenya","Korea","Korea,North","Kuwait",
+                    "Latvia","Lebanon","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Madagascar","Madeira",
+                    "Malagasy","Malawi","Malaysia","Mali","Malta","Martinique","Mauritania","Mauritius","Mexico","Mongolia","Morocco",
+                    "Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Guinea","New Zealand",
+                    "Nicaragua","Niger","Nigeria","Norway","Oman","Panama","Paraguay","People's Republic of China","Peru","Poland",
+                    "Portugal","Principality of Monaco","Puerto Rico","Qatar","Republic of Armenia","Republic of Philippines",
+                    "Republic of Uzbekistan","Reunion","Romania","Rusia","Rwanda","Samoa","Saudi Arabia","Senegal","Serbia","Seychelles",
+                    "Sierra Leone","Singapore","Slovakia","Slovenia","Somalia","South Africa","Spain","Sri Lanka","Sudan","Surinam",
+                    "Swaziland","Sweden","Switzerland","Syria","Tahiti","Taiwan","Tanzania","Tatarstan","Thailand","Togo","Trinidad Tabago",
+                    "Tunisia","Turkey","Uganda","Ukraine","United Arab Emirates","United Kindom","United States","Uruguay","Venezuela",
+                    "Vietnam","Yemen","Yugoslavia","Zaire","Zambia","Zimbabwe");
+			var x;
+            for(x=0;x<countries.length;x++){
+            document.writeln('<option value="'+countries[x]+'">'+countries[x]+'</option>');
+            }
+            </script>
+            </select></td></tr>
+            <tr><td>Phone nr. : </td><td><input type="text" name="mobile" value="" size="25" /></td></tr>
+            <tr><td>Gender : </td><td>Male<input type="radio" name="gender" value="m" checked="checked" />Female<input type="radio" name="gender" value="f" /> </td></tr>
+            <tr><td>Birthdate : </td><td><select name="day">
+            <script type="text/javascript">
+            for($x=1;$x<=31;$x++)
+            document.writeln('<option value="'+$x+'">'+$x+'</option>');
+      
+             </script>
+            </select>
+            <select name="month">
+            <script type="text/javascript">
+            for($x=1;$x<=12;$x++)
+            document.writeln('<option value="'+$x+'">'+$x+'</option>');
+      
+             </script>
+            </select>
+            <select name="year">
+            <script type="text/javascript">
+            for($x=1;$x<=2011;$x++)
+            document.writeln('<option value="'+$x+'">'+$x+'</option>');
+      
+             </script>
+            <option value="2012" selected="selected">2012</option>
+            </select>
+            </td></tr>
+            <tr><td colspan="2" align="right"><input type="submit" value="Register" name="register" /><input type="reset" value="Reset" name="clear" /></td></tr>
+            </table>
+            </fieldset>
+            </form>
+          </div>
+  </div>
+  <div class="footer">
+  	<div class="footer_menu"> <a href="sitemap.html">Sitemap</a> | FAQ | Locations | Customer Service | Privacy Policy | Terms of Use</div>
+    <div class="paylogo">
+    	<img src="images/pay_method.png" width="180" height="50" alt="pay_methods" />
+    </div>
+    <div class="copyright">Copyright &copy; PICERI.AL 2012 | All Rights Reserved</div>
+    <div class="follow">
+        <a href="http://www.facebook.com" title="Facebook" target="_blank">
+            <img src="images/social/facebook.png" width="24" height="24" alt="facebook" />
+        </a>
+                <a href="http://www.twitter.com" title="Twitter" target="_blank">
+            <img src="images/social/twitter.png" width="24" height="24" alt="twitter" />
+        </a>
+               <a href="https://plus.google.com/102750821162495129904" title="Google" target="_blank">
+            <img src="images/social/google.png" width="24" height="24" alt="google plus" />
+        </a>
+               <a href="http://www.facebook.com" title="Feed" target="_blank">
+            <img src="images/social/feed.png" width="24" height="24" alt="feed" />
+        </a>
+               <a href="http://www.youtube.com" title="Youtube" target="_blank">
+            <img src="images/social/youtube.png" width="24" height="24" alt="youtube" />
+        </a>
+               <a href="http://www.linkedin.com" title="Linkedin" target="_blank">
+            <img src="images/social/linkedin.png" width="24" height="24" alt="linkedin" />
+        </a>
+               <a href="http://www.flickr.com" title="Flickr" target="_blank">
+            <img src="images/social/flickr.png" width="24" height="24" alt="flickr" />
+        </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
